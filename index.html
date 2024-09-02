@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario </h1>
+    <form>
+        <!-- Campo de texto -->
+        <div class="form-group">
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" placeholder="Introduce tu nombre de usuario" required>
+        </div>
+
+        <!-- Campo de contraseña -->
+        <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required>
+        </div>
+
+        <!-- Campo de correo electrónico -->
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+        </div>
+
+        <!-- Campo de número -->
+        <div class="form-group">
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" min="1" max="120" placeholder="Introduce tu edad" required>
+        </div>
+
+        <!-- Campo de teléfono -->
+        <div class="form-group">
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Introduce tu número de teléfono">
+        </div>
+
+        <!-- Campo de URL -->
+        <div class="form-group">
+            <label for="website">Sitio Web:</label>
+            <input type="url" id="website" name="website" placeholder="Introduce la URL de tu sitio web">
+        </div>
+
+        <!-- Campo de fecha -->
+        <div class="form-group">
+            <label for="birthdate">Fecha de Nacimiento:</label>
+            <input type="date" id="birthdate" name="birthdate">
+        </div>
+
+        <!-- Campo de hora -->
+        <div class="form-group">
+            <label for="appointment">Hora de la Cita:</label>
+            <input type="time" id="appointment" name="appointment">
+        </div>
+
+        <!-- Campo de archivo -->
+        <div class="form-group">
+            <label for="upload">Subir Archivo:</label>
+            <input type="file" id="upload" name="upload">
+        </div>
+
+        <!-- Campo de selección de color -->
+        <div class="form-group">
+            <label for="color">Color Favorito:</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <!-- Botones -->
+        <div class="form-group">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+        </div>
+    </form>
+</body>
+</html>
